@@ -1,0 +1,27 @@
+Anotações
+
+Comando úteis:
+
+- flutter devices => exibe a quantidade de dispositivos conectados
+- flutter run => caso tenha apenas um device conectado a máquina, sendo ele físico ou máquina virtual, ele rodará automaticamente o mesmo
+- flutter run -d "id do device" => roda o device conectado
+    - r => da um restart no app, mas sem mudar o estado das informações do mesmo
+    - shift + r => hot restart, dando um restart em toda a aplicação
+
+Widgets:
+- StatelessWidget => é um state sem estado, ou seja, é apenas um desenho na tela, apenas elementos visuais
+- StatefulWidget => mantém o estado dentro da aplicação 
+- Container() => representa um container, um componente
+- Scaffold() => representa uma página. Quando for criar um Widget que representa uma página, é necessário utilizar um Scaffold(), o esqueleto da página
+
+JSON:
+- https://javiercbk.github.io/json_to_dart/ => converte JSON em formato de dart, para trabalhar com Json dentro da aplicação
+- pasta Models => pasta onde será armazenado as models de Json em dart
+
+state:
+- setState(() {}) => function disponível apenas em StatefulWidget, é utilizado para alterar o estado do item específico dentro da aplicação
+
+shared_preferences:
+- pacote utilizado para salvar informações dentro da aplicação
+- dentro do "pubspec.yaml" adicionar a linha "shared_preferences: ^0.5.3"
+- rodar novamente a aplicação, e assim ja vai estar pronto o pacote para uso
